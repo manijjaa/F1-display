@@ -4,7 +4,7 @@ A countertop e-paper frame (7.3" E Ink Spectra 6, 800×480) that shows the next 
 race name and dates, days to go, the circuit, the weekend schedule in Vilnius time, the weekend
 forecast, the top 5 of qualifying and the top 3 of the championship.
 
-![preview](https://raw.githubusercontent.com/manijjaa/f1-display/display/f1_preview.png)
+![preview](https://raw.githubusercontent.com/manijjaa/F1-display/display/f1_preview.png)
 
 ## How it works
 
@@ -14,16 +14,16 @@ redraws only if it changed (ETag).
 
 | File on the `display` branch | What it is |
 |---|---|
-| [`f1.epdgz`](https://raw.githubusercontent.com/manijjaa/f1-display/display/f1.epdgz) | what the frame downloads: exact panel pixels, no dithering on the device |
-| [`f1_preview.png`](https://raw.githubusercontent.com/manijjaa/f1-display/display/f1_preview.png) | 2× preview in "real panel" colours |
-| [`f1.png`](https://raw.githubusercontent.com/manijjaa/f1-display/display/f1.png) | the same card as a plain PNG |
-| [`status.json`](https://raw.githubusercontent.com/manijjaa/f1-display/display/status.json) | what was drawn, when, and whether any API was down |
+| [`f1.epdgz`](https://raw.githubusercontent.com/manijjaa/F1-display/display/f1.epdgz) | what the frame downloads: exact panel pixels, no dithering on the device |
+| [`f1_preview.png`](https://raw.githubusercontent.com/manijjaa/F1-display/display/f1_preview.png) | 2× preview in "real panel" colours |
+| [`f1.png`](https://raw.githubusercontent.com/manijjaa/F1-display/display/f1.png) | the same card as a plain PNG |
+| [`status.json`](https://raw.githubusercontent.com/manijjaa/F1-display/display/status.json) | what was drawn, when, and whether any API was down |
 
 ## Frame setup
 
 Flash [esp32-photoframe](https://github.com/aitjcize/esp32-photoframe) (Waveshare PhotoPainter or
 Seeed XIAO EE04), set orientation to landscape, rotation mode to URL, and the image URL to
-`https://raw.githubusercontent.com/manijjaa/f1-display/display/f1.epdgz`.
+`https://raw.githubusercontent.com/manijjaa/F1-display/display/f1.epdgz`.
 
 ## Rules
 
