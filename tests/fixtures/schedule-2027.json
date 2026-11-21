@@ -1,0 +1,80 @@
+{
+ "MRData": {
+  "xmlns": "",
+  "series": "f1",
+  "url": "",
+  "limit": "100",
+  "offset": "0",
+  "total": "2",
+  "RaceTable": {
+   "season": "2027",
+   "Races": [
+    {
+     "season": "2027",
+     "round": "1",
+     "url": "",
+     "raceName": "Bahrain Grand Prix",
+     "Circuit": {
+      "circuitId": "bahrain",
+      "circuitName": "Bahrain International Circuit",
+      "url": "",
+      "Location": {
+       "lat": "26.0325",
+       "long": "50.5106",
+       "locality": "Sakhir",
+       "country": "Bahrain"
+      }
+     },
+     "date": "2027-03-14",
+     "time": "15:00:00Z",
+     "FirstPractice": {
+      "date": "2027-03-12",
+      "time": "11:30:00Z"
+     },
+     "SprintQualifying": {
+      "date": "2027-03-12",
+      "time": "15:30:00Z"
+     },
+     "Sprint": {
+      "date": "2027-03-13",
+      "time": "12:00:00Z"
+     },
+     "Qualifying": {
+      "date": "2027-03-13",
+      "time": "16:00:00Z"
+     }
+    },
+    {
+     "season": "2027",
+     "round": "2",
+     "url": "",
+     "raceName": "Saudi Arabian Grand Prix",
+     "Circuit": {
+      "circuitId": "jeddah",
+      "circuitName": "Jeddah Corniche Circuit",
+      "url": "",
+      "Location": {
+       "lat": "21.6319",
+       "long": "39.1044",
+       "locality": "Jeddah",
+       "country": "Saudi Arabia"
+      }
+     },
+     "date": "2027-03-21",
+     "FirstPractice": {
+      "date": "2027-03-19"
+     },
+     "SecondPractice": {
+      "date": "2027-03-19"
+     },
+     "ThirdPractice": {
+      "date": "2027-03-20"
+     },
+     "Qualifying": {
+      "date": "2027-03-20"
+     }
+    }
+   ]
+  }
+ }
+}

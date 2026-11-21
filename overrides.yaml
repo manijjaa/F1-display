@@ -1,0 +1,23 @@
+# Manual fixes on top of the API data. Leave the list empty when the API is right.
+#
+# Each entry is matched by season + round. It can patch a race the API has
+# (new name, corrected session times) or add a race the API doesn't list yet.
+# Session times are Vilnius time, in quotes: "YYYY-MM-DD HH:MM", or "YYYY-MM-DD"
+# if only the date is known. Labels: FP1, FP2, FP3, Sprint Q, Sprint, Quali, Race.
+#
+# Example: add Round 1 of 2027 before the API has it
+# races:
+#   - season: 2027
+#     round: 1
+#     name: Bahrain Grand Prix
+#     circuit: bahrain
+#     lat: 26.0325
+#     lon: 50.5106
+#     sessions:
+#       FP1: "2027-03-12 14:30"
+#       Sprint Q: "2027-03-12 18:30"
+#       Sprint: "2027-03-13 14:00"
+#       Quali: "2027-03-13 18:00"
+#       Race: "2027-03-14 17:00"
+
+races: []

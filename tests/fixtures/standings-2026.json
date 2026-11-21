@@ -1,0 +1,100 @@
+{
+ "MRData": {
+  "StandingsTable": {
+   "season": "2026",
+   "StandingsLists": [
+    {
+     "season": "2026",
+     "round": "20",
+     "DriverStandings": [
+      {
+       "position": "1",
+       "points": "390",
+       "wins": "0",
+       "Driver": {
+        "driverId": "antonelli",
+        "code": "ANT",
+        "familyName": "Antonelli",
+        "givenName": ""
+       },
+       "Constructors": [
+        {
+         "constructorId": "mercedes",
+         "name": "mercedes"
+        }
+       ]
+      },
+      {
+       "position": "2",
+       "points": "279",
+       "wins": "0",
+       "Driver": {
+        "driverId": "verstappen",
+        "code": "VER",
+        "familyName": "Verstappen",
+        "givenName": ""
+       },
+       "Constructors": [
+        {
+         "constructorId": "red_bull",
+         "name": "red_bull"
+        }
+       ]
+      },
+      {
+       "position": "3",
+       "points": "262",
+       "wins": "0",
+       "Driver": {
+        "driverId": "russell",
+        "code": "RUS",
+        "familyName": "Russell",
+        "givenName": ""
+       },
+       "Constructors": [
+        {
+         "constructorId": "mercedes",
+         "name": "mercedes"
+        }
+       ]
+      },
+      {
+       "position": "4",
+       "points": "261",
+       "wins": "0",
+       "Driver": {
+        "driverId": "hamilton",
+        "code": "HAM",
+        "familyName": "Hamilton",
+        "givenName": ""
+       },
+       "Constructors": [
+        {
+         "constructorId": "ferrari",
+         "name": "ferrari"
+        }
+       ]
+      },
+      {
+       "position": "5",
+       "points": "249",
+       "wins": "0",
+       "Driver": {
+        "driverId": "leclerc",
+        "code": "LEC",
+        "familyName": "Leclerc",
+        "givenName": ""
+       },
+       "Constructors": [
+        {
+         "constructorId": "ferrari",
+         "name": "ferrari"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

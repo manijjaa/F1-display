@@ -1,0 +1,12 @@
+# Per-circuit drawing tweaks, keyed by Jolpica circuitId (e.g. bahrain, monaco, vegas).
+# The outline file is normally picked automatically: the one in assets/circuits/ nearest
+# to the circuit's coordinates from the API. Everything here is optional.
+#
+#   file:    outline to use instead, e.g. bh-2002.geojson
+#   rotate:  turn the map by this many degrees (positive = clockwise)
+#   start:   index of the start/finish point in the outline (default 0)
+#   reverse: true if the outline runs against the race direction
+#
+# Example:
+# jeddah:
+#   rotate: -20

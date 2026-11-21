@@ -1,0 +1,67 @@
+name: Update F1 card
+
+on:
+  schedule:
+    - cron: "7,37 * * * *"     # every 30 min; GitHub can start runs a few minutes late
+  workflow_dispatch:            # "Run workflow" button in the Actions tab
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: f1-card
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+          cache: pip
+
+      - name: Install
+        run: pip install -r requirements.txt
+
+      - name: Restore last good data
+        run: |
+          if git fetch --quiet --depth=1 origin display 2>/dev/null; then
+            git archive FETCH_HEAD cache 2>/dev/null | tar -x || true
+          fi
+
+      - name: Render
+        run: python make_image.py --out site --cache cache
+
+      # The display branch only ever holds one commit: the latest card, its data cache
+      # and status.json. The frame downloads
+      # https://raw.githubusercontent.com/<owner>/<repo>/display/f1.epdgz
+      - name: Publish to the display branch
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cp -r cache site/cache
+          cd site
+          git init --quiet -b display
+          git add -A
+          git -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit --quiet -m "F1 card $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push --quiet --force "https://x-access-token:${TOKEN}@github.com/${GITHUB_REPOSITORY}.git" display
+
+      # GitHub pauses scheduled workflows in repos with no commits for 60 days.
+      - name: Keep the schedule alive
+        if: github.event_name == 'schedule'
+        run: |
+          age=$(( ( $(date +%s) - $(git log -1 --format=%ct) ) / 86400 ))
+          if [ "$age" -ge 45 ]; then
+            git -c user.name="github-actions[bot]" \
+                -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+                commit --allow-empty --quiet -m "Keepalive"
+            git push --quiet origin HEAD:main
+          fi

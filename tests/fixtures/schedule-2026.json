@@ -1,0 +1,155 @@
+{
+ "MRData": {
+  "xmlns": "",
+  "series": "f1",
+  "url": "",
+  "limit": "100",
+  "offset": "0",
+  "total": "4",
+  "RaceTable": {
+   "season": "2026",
+   "Races": [
+    {
+     "season": "2026",
+     "round": "20",
+     "url": "",
+     "raceName": "São Paulo Grand Prix",
+     "Circuit": {
+      "circuitId": "interlagos",
+      "circuitName": "Autódromo José Carlos Pace",
+      "url": "",
+      "Location": {
+       "lat": "-23.7036",
+       "long": "-46.6997",
+       "locality": "São Paulo",
+       "country": "Brazil"
+      }
+     },
+     "date": "2026-11-08",
+     "time": "17:00:00Z",
+     "FirstPractice": {
+      "date": "2026-11-06",
+      "time": "14:30:00Z"
+     },
+     "SprintQualifying": {
+      "date": "2026-11-06",
+      "time": "18:30:00Z"
+     },
+     "Sprint": {
+      "date": "2026-11-07",
+      "time": "14:00:00Z"
+     },
+     "Qualifying": {
+      "date": "2026-11-07",
+      "time": "18:00:00Z"
+     }
+    },
+    {
+     "season": "2026",
+     "round": "21",
+     "url": "",
+     "raceName": "Las Vegas Grand Prix",
+     "Circuit": {
+      "circuitId": "vegas",
+      "circuitName": "Las Vegas Strip Street Circuit",
+      "url": "",
+      "Location": {
+       "lat": "36.1147",
+       "long": "-115.173",
+       "locality": "Las Vegas",
+       "country": "USA"
+      }
+     },
+     "date": "2026-11-22",
+     "time": "04:00:00Z",
+     "FirstPractice": {
+      "date": "2026-11-20",
+      "time": "00:30:00Z"
+     },
+     "SecondPractice": {
+      "date": "2026-11-20",
+      "time": "04:00:00Z"
+     },
+     "ThirdPractice": {
+      "date": "2026-11-21",
+      "time": "00:30:00Z"
+     },
+     "Qualifying": {
+      "date": "2026-11-21",
+      "time": "04:00:00Z"
+     }
+    },
+    {
+     "season": "2026",
+     "round": "22",
+     "url": "",
+     "raceName": "Qatar Grand Prix",
+     "Circuit": {
+      "circuitId": "losail",
+      "circuitName": "Losail International Circuit",
+      "url": "",
+      "Location": {
+       "lat": "25.49",
+       "long": "51.4542",
+       "locality": "Lusail",
+       "country": "Qatar"
+      }
+     },
+     "date": "2026-11-29",
+     "time": "16:00:00Z",
+     "FirstPractice": {
+      "date": "2026-11-27",
+      "time": "13:30:00Z"
+     },
+     "SprintQualifying": {
+      "date": "2026-11-27",
+      "time": "17:30:00Z"
+     },
+     "Sprint": {
+      "date": "2026-11-28",
+      "time": "14:00:00Z"
+     },
+     "Qualifying": {
+      "date": "2026-11-28",
+      "time": "18:00:00Z"
+     }
+    },
+    {
+     "season": "2026",
+     "round": "23",
+     "url": "",
+     "raceName": "Abu Dhabi Grand Prix",
+     "Circuit": {
+      "circuitId": "yas_marina",
+      "circuitName": "Yas Marina Circuit",
+      "url": "",
+      "Location": {
+       "lat": "24.4672",
+       "long": "54.6031",
+       "locality": "Abu Dhabi",
+       "country": "UAE"
+      }
+     },
+     "date": "2026-12-06",
+     "time": "13:00:00Z",
+     "FirstPractice": {
+      "date": "2026-12-04",
+      "time": "09:30:00Z"
+     },
+     "SecondPractice": {
+      "date": "2026-12-04",
+      "time": "13:00:00Z"
+     },
+     "ThirdPractice": {
+      "date": "2026-12-05",
+      "time": "10:30:00Z"
+     },
+     "Qualifying": {
+      "date": "2026-12-05",
+      "time": "14:00:00Z"
+     }
+    }
+   ]
+  }
+ }
+}
