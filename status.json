@@ -1,0 +1,14 @@
+{
+  "season": 2026,
+  "round": 22,
+  "race": "Qatar Grand Prix",
+  "circuit": "losail",
+  "circuit_file": "qa-2004.geojson",
+  "days_to_race": 1,
+  "grid": false,
+  "weather": true,
+  "standings_season": 2026,
+  "stale": [],
+  "notes": [],
+  "generated": "2026-11-28 11:36 UTC"
+}
